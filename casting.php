@@ -20,6 +20,12 @@
     $entero_no_cero = (bool) $entero_no_cero;
     var_dump($entero_no_cero);
 
+    $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+ 
+    $json_decoded = json_decode($jsonobj);
 
+    foreach($json_decoded as $x => $val) {
+        echo "\"$x\" : $val\n";
+      }
 
 ?>
